@@ -6,8 +6,9 @@ app.get('/', (req, res, next) => {
     res.send("Hello World from Express & Nodejs & Docker");
 })
 
-const port = 3045;
+const PORT = 3045;
+const HOST = '0.0.0.0';
 
-app.listen(port, () => {
-    console.log("app listen: ", port);
+app.listen(PORT, HOST, () => {
+    console.log(`app listen: ${PORT}`);
 })
